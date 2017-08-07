@@ -91,12 +91,15 @@ offset | 0 | Sets the offset.
 
 ```javascript
 {
-  "id": 5,
-  "username": "doro",
-  "fullname": "doro bucci",
-  "email": "doro@bucci.com",
-  "roleId": 2,
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJrZW5wYWNoaSIsInJvbGVJZCI6MiwiaWF0IjoxNDk2MDAxNTE4LCJleHAiOjE0OTY2MDYzMTh9.GjmEBd_9LH9b_Gdabgdfit2HfkFBZfPshquUnAmRXV8"
+    "message": "Signed up successfully",
+    "user": {
+        "id": 5,
+        "username": "doro",
+        "fullname": "doro bucci",
+        "roleId": 2,
+        "email": "doro@bucci.com"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaWF0IjoxNTAyMTAwMzA5LCJleHAiOjE1MDIxODY3MDl9.vzMK6Mr7cLr7rk5mXF5KeRXlJn913XBJXQjaOGJEiXo"
 }
 ```
 
@@ -118,8 +121,8 @@ offset | 0 | Sets the offset.
   "id": 4,
   "username": "Mikail",
   "fullname": "Mikail Stanislaski",
-  "email": "mikahil.stanislaski@gmail.com",
   "roleId": 2,
+  "email": "mikahil.stanislaski@gmail.com",
 }
 ```
 
@@ -137,7 +140,7 @@ offset | 0 | Sets the offset.
 
 ```javascript
 {
-  "username": mikhy,
+  "username": "mikhy",
 }
 ```
 
@@ -146,7 +149,7 @@ offset | 0 | Sets the offset.
 ```javascript
 {
   "id": 4,
-  "username": "Mikail",
+  "username": "mikhy",
   "fullname": "Mikail Stanislaski",
   "email": "mikahil.stanislaski@gmail.com",
   "roleId": 2,
@@ -196,11 +199,15 @@ offset | 0 | Sets the offset.
 
 ```javascript
 {
-  "username": "tolu",
-  "email": "tolu@gmail.com",
-  "fullname": "tolu afobs",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGVJZCI6MSwiaWF0IjoxNDk2MDA5MjQxLCJleHAiOjE0OTY2MTQwNDF9.hkWYITDnqi7paQjhkqhh5Fe0yAiPf34Ffji9jKHQ_Ik",
-  "message": "Successfully logged in"
+    "message": "Signed in successfully",
+    "user": {
+        "id": 1,
+        "username": "tolu",
+        "fullname": "tolu afobs",
+        "roleId": 1,
+        "email": "tolu@gmail.com"
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaWF0IjoxNTAyMTAwMzA5LCJleHAiOjE1MDIxODY3MDl9.vzMK6Mr7cLr7rk5mXF5KeRXlJn913XBJXQjaOGJEiXo"
 }
 ```
 
