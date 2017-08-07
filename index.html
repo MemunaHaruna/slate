@@ -520,12 +520,15 @@ That is, only users in a particular role can view role-access documents, while o
 <p>Sample JSON structured response:</p>
 </blockquote>
 <pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
-  <span class="s2">"id"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-  <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"doro"</span><span class="p">,</span>
-  <span class="s2">"fullname"</span><span class="p">:</span> <span class="s2">"doro bucci"</span><span class="p">,</span>
-  <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"doro@bucci.com"</span><span class="p">,</span>
-  <span class="s2">"roleId"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-  <span class="s2">"token"</span><span class="p">:</span> <span class="s2">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJrZW5wYWNoaSIsInJvbGVJZCI6MiwiaWF0IjoxNDk2MDAxNTE4LCJleHAiOjE0OTY2MDYzMTh9.GjmEBd_9LH9b_Gdabgdfit2HfkFBZfPshquUnAmRXV8"</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Signed up successfully"</span><span class="p">,</span>
+    <span class="s2">"user"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"doro"</span><span class="p">,</span>
+        <span class="s2">"fullname"</span><span class="p">:</span> <span class="s2">"doro bucci"</span><span class="p">,</span>
+        <span class="s2">"roleId"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"doro@bucci.com"</span>
+    <span class="p">},</span>
+    <span class="s2">"token"</span><span class="p">:</span> <span class="s2">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaWF0IjoxNTAyMTAwMzA5LCJleHAiOjE1MDIxODY3MDl9.vzMK6Mr7cLr7rk5mXF5KeRXlJn913XBJXQjaOGJEiXo"</span>
 <span class="p">}</span>
 </code></pre><h3 id='request-2'>Request</h3>
 <ul>
@@ -545,8 +548,8 @@ That is, only users in a particular role can view role-access documents, while o
   <span class="s2">"id"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
   <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"Mikail"</span><span class="p">,</span>
   <span class="s2">"fullname"</span><span class="p">:</span> <span class="s2">"Mikail Stanislaski"</span><span class="p">,</span>
-  <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"mikahil.stanislaski@gmail.com"</span><span class="p">,</span>
   <span class="s2">"roleId"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"mikahil.stanislaski@gmail.com"</span><span class="p">,</span>
 <span class="p">}</span>
 </code></pre><h3 id='request-3'>Request</h3>
 <ul>
@@ -562,7 +565,7 @@ That is, only users in a particular role can view role-access documents, while o
 <p>Request:</p>
 </blockquote>
 <pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
-  <span class="s2">"username"</span><span class="p">:</span> <span class="nx">mikhy</span><span class="p">,</span>
+  <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"mikhy"</span><span class="p">,</span>
 <span class="p">}</span>
 </code></pre>
 <blockquote>
@@ -570,7 +573,7 @@ That is, only users in a particular role can view role-access documents, while o
 </blockquote>
 <pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
   <span class="s2">"id"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-  <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"Mikail"</span><span class="p">,</span>
+  <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"mikhy"</span><span class="p">,</span>
   <span class="s2">"fullname"</span><span class="p">:</span> <span class="s2">"Mikail Stanislaski"</span><span class="p">,</span>
   <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"mikahil.stanislaski@gmail.com"</span><span class="p">,</span>
   <span class="s2">"roleId"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
@@ -615,11 +618,15 @@ That is, only users in a particular role can view role-access documents, while o
 <p>Sample JSON structured response:</p>
 </blockquote>
 <pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
-  <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"tolu"</span><span class="p">,</span>
-  <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"tolu@gmail.com"</span><span class="p">,</span>
-  <span class="s2">"fullname"</span><span class="p">:</span> <span class="s2">"tolu afobs"</span><span class="p">,</span>
-  <span class="s2">"token"</span><span class="p">:</span> <span class="s2">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGVJZCI6MSwiaWF0IjoxNDk2MDA5MjQxLCJleHAiOjE0OTY2MTQwNDF9.hkWYITDnqi7paQjhkqhh5Fe0yAiPf34Ffji9jKHQ_Ik"</span><span class="p">,</span>
-  <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Successfully logged in"</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Signed in successfully"</span><span class="p">,</span>
+    <span class="s2">"user"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"username"</span><span class="p">:</span> <span class="s2">"tolu"</span><span class="p">,</span>
+        <span class="s2">"fullname"</span><span class="p">:</span> <span class="s2">"tolu afobs"</span><span class="p">,</span>
+        <span class="s2">"roleId"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"tolu@gmail.com"</span>
+    <span class="p">},</span>
+    <span class="s2">"token"</span><span class="p">:</span> <span class="s2">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaWF0IjoxNTAyMTAwMzA5LCJleHAiOjE1MDIxODY3MDl9.vzMK6Mr7cLr7rk5mXF5KeRXlJn913XBJXQjaOGJEiXo"</span>
 <span class="p">}</span>
 </code></pre><h3 id='request-6'>Request</h3>
 <ul>
