@@ -59,7 +59,7 @@
 ```
 
 ### Request
-- Endpoint: GET: `/api/users`
+- Endpoint: GET: `/api/v1/users`
 - Requires: Authentication
 
 ### Query Parameters
@@ -104,7 +104,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: POST: `/auth/api/users`
+- Endpoint: POST: `/auth/api/v1/users`
 - Body: `(application/json)`
 
 
@@ -127,7 +127,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: GET: `/api/users/:id`
+- Endpoint: GET: `/api/v1/users/:id`
 
 ### Response
 - Status: `200: OK`
@@ -157,7 +157,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: PUT: `/api/users/:id`
+- Endpoint: PUT: `/api/v1/users/:id`
 - Body: `(application/json)`
 
 ### Response
@@ -176,7 +176,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: DELETE: `/api/users/:id`
+- Endpoint: DELETE: `/api/v1/users/:id`
 - Requires: Authentication
 
 ### Response
@@ -212,7 +212,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: POST: `/auth/api/users/login`
+- Endpoint: POST: `/auth/api/v1/users/login`
 
 ### Response
 - Status: `200: OK`
@@ -230,7 +230,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: POST: `/api/users/logout`
+- Endpoint: POST: `/api/v1/users/logout`
 
 ### Response
 - Status: `200: OK`
@@ -263,7 +263,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: GET: `/api/users/:id/documents`
+- Endpoint: GET: `/api/v1/users/:id/documents`
 - Requires: Authentication
 
 ### Response
@@ -310,7 +310,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: GET: `/api/search/users/`
+- Endpoint: GET: `/api/v1/search/users/`
 - Requires: Authentication
 
 ### Query Parameters

@@ -65,7 +65,7 @@
 ```
 
 ### Request
-- Endpoint: GET: `/api/documents`
+- Endpoint: GET: `/api/v1/documents`
 
 ### Query Parameters
 Parameter | Default | Description
@@ -112,7 +112,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: POST: `/api/documents`
+- Endpoint: POST: `/api/v1/documents`
 - Requires: Authentication
 - Body: `(application/json)`
 
@@ -146,7 +146,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: GET: `/api/documents/:id`
+- Endpoint: GET: `/api/v1/documents/:id`
 
 ### Response
 - Status: `200: OK`
@@ -185,7 +185,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: PUT: `/api/documents/:id`
+- Endpoint: PUT: `/api/v1/documents/:id`
 - Requires: Authentication
 - Body: `(application/json)`
 
@@ -205,7 +205,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: DELETE: `/api/documents/:id`
+- Endpoint: DELETE: `/api/v1/documents/:id`
 - Requires: Authentication
 
 ### Response
@@ -265,7 +265,7 @@ offset | 0 | Sets the offset.
 ```
 
 ### Request
-- Endpoint: GET: `/api/search/documents/`
+- Endpoint: GET: `/api/v1/search/documents/`
 - Requires: Authentication
 
 ### Query Parameters

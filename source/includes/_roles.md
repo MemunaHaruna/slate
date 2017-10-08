@@ -17,7 +17,7 @@
 ```
 
 ### Request
-- Endpoint: GET: `/api/roles`
+- Endpoint: GET: `/api/v1/roles`
 - Requires: Authentication
 
 ### Response
@@ -44,7 +44,7 @@
 ```
 
 ### Request
-- Endpoint: POST: `/api/roles`
+- Endpoint: POST: `/api/v1/roles`
 - Requires: Authentication
 - Body: `(application/json)`
 
@@ -64,7 +64,7 @@
 ```
 
 ### Request
-- Endpoint: DELETE: `/api/roles/:id`
+- Endpoint: DELETE: `/api/v1/roles/:id`
 - Requires: Authentication
 
 ### Response
