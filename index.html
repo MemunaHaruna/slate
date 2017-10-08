@@ -313,7 +313,7 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='docgenie-api-documentation'>DocGenie API Documentation</h1><h2 id='introduction'>Introduction</h2>
-<p>Docgenie API contains several end points that allows users to create, edit, retrieve and delete documents. It also sets access privileges so only authorized users can perform certain operations.
+<p>Docgenie API contains several end-points that allows users to create, edit, retrieve and delete documents. It also sets access privileges so only authorized users can perform certain operations.
 That is, only users in a particular role can view role-access documents, while only the creator of a document has the right to delete or edit it.</p>
 <h2 id='development'>Development</h2>
 <p>The application was developed with <a href="http://nodejs.org/">NodeJs</a> and <a href="http://expressjs.com/">Express</a> is used for routing. The <a href="http://postgresql.com/">Postgres</a> database was used with sequelize as the ORM.</p>
@@ -335,36 +335,36 @@ That is, only users in a particular role can view role-access documents, while o
 </tr>
 </thead><tbody>
 <tr>
-<td>POST /auth/api/users/login</td>
+<td>POST /auth/api/v1/users/login</td>
 <td>Logs in a user.</td>
 </tr>
 <tr>
-<td>POST /api/users/logout</td>
+<td>POST /api/v1/users/logout</td>
 <td>Logs out a user.</td>
 </tr>
 <tr>
-<td>POST /auth/api/users/</td>
-<td>Creates a new user.</td>
+<td>POST /auth/api/v1/users</td>
+<td>Creates a new user(Sign up).</td>
 </tr>
 <tr>
-<td>GET /api/users/</td>
+<td>GET /api/v1/users</td>
 <td>Gets all registered users (available only to the Admin).</td>
 </tr>
 <tr>
-<td>GET /api/users/:id</td>
+<td>GET /api/v1/users/:id</td>
 <td>Finds a particular user by his/her id.</td>
 </tr>
 <tr>
-<td>PUT /api/users/:id</td>
-<td>Updates a user&#39;s attributes based on the id specified (available to the profile owner or admin)</td>
+<td>PUT /api/v1/users/:id</td>
+<td>Updates a user&#39;s attributes based on the id specified (available only to the profile owner or admin).</td>
 </tr>
 <tr>
-<td>DELETE /api/users/:id</td>
-<td>Deletes a user (available only to the profile owner)</td>
+<td>DELETE /api/v1/users/:id</td>
+<td>Deletes a user (available only to the profile owner).</td>
 </tr>
 <tr>
-<td>GET /api/users/:id/documents</td>
-<td>Gets all documents belonging to a particular user</td>
+<td>GET /api/v1/users/:id/documents</td>
+<td>Gets all documents belonging to a particular user.</td>
 </tr>
 </tbody></table>
 <h3 id='documents'>Documents</h3>
@@ -375,27 +375,27 @@ That is, only users in a particular role can view role-access documents, while o
 </tr>
 </thead><tbody>
 <tr>
-<td>POST /api/documents/</td>
+<td>POST /api/v1/documents</td>
 <td>Creates a new document.</td>
 </tr>
 <tr>
-<td>GET /api/documents/</td>
+<td>GET /api/v1/documents</td>
 <td>Gets all documents.</td>
 </tr>
 <tr>
-<td>GET /api/documents/:id</td>
+<td>GET /api/v1/documents/:id</td>
 <td>Find a particular document by it&#39;s id.</td>
 </tr>
 <tr>
-<td>PUT /api/documents/:id</td>
+<td>PUT /api/v1/documents/:id</td>
 <td>Updates a document attributes. (available only to the owner)</td>
 </tr>
 <tr>
-<td>DELETE /api/documents/:id</td>
-<td>Delete a particular document. (available only to the owner)</td>
+<td>DELETE /api/v1/documents/:id</td>
+<td>Delete a particular document. (available only to the document creator)</td>
 </tr>
 <tr>
-<td>GET /api/search/documents/?searchKey=${query}</td>
+<td>GET /api/v1/search/documents/?searchKey=${query}</td>
 <td>Get all documents with title or content containing the search query</td>
 </tr>
 </tbody></table>
@@ -407,15 +407,15 @@ That is, only users in a particular role can view role-access documents, while o
 </tr>
 </thead><tbody>
 <tr>
-<td>GET /api/roles/</td>
+<td>GET /api/v1/roles</td>
 <td>Get all created Roles.</td>
 </tr>
 <tr>
-<td>POST /api/roles/</td>
+<td>POST /api/v1/roles</td>
 <td>Create a new Role.</td>
 </tr>
 <tr>
-<td>DELETE /api/roles/:id</td>
+<td>DELETE /api/v1/roles/:id</td>
 <td>Delete a Role.</td>
 </tr>
 </tbody></table>
