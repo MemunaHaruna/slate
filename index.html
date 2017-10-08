@@ -477,7 +477,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/users</code></li>
+<li>Endpoint: GET: <code>/api/v1/users</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='query-parameters'>Query Parameters</h3>
@@ -532,7 +532,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-2'>Request</h3>
 <ul>
-<li>Endpoint: POST: <code>/auth/api/users</code></li>
+<li>Endpoint: POST: <code>/auth/api/v1/users</code></li>
 <li>Body: <code>(application/json)</code></li>
 </ul>
 <h3 id='response-2'>Response</h3>
@@ -553,7 +553,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-3'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/users/:id</code></li>
+<li>Endpoint: GET: <code>/api/v1/users/:id</code></li>
 </ul>
 <h3 id='response-3'>Response</h3>
 <ul>
@@ -580,7 +580,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-4'>Request</h3>
 <ul>
-<li>Endpoint: PUT: <code>/api/users/:id</code></li>
+<li>Endpoint: PUT: <code>/api/v1/users/:id</code></li>
 <li>Body: <code>(application/json)</code></li>
 </ul>
 <h3 id='response-4'>Response</h3>
@@ -597,7 +597,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-5'>Request</h3>
 <ul>
-<li>Endpoint: DELETE: <code>/api/users/:id</code></li>
+<li>Endpoint: DELETE: <code>/api/v1/users/:id</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='response-5'>Response</h3>
@@ -630,7 +630,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-6'>Request</h3>
 <ul>
-<li>Endpoint: POST: <code>/auth/api/users/login</code></li>
+<li>Endpoint: POST: <code>/auth/api/v1/users/login</code></li>
 </ul>
 <h3 id='response-6'>Response</h3>
 <ul>
@@ -646,7 +646,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-7'>Request</h3>
 <ul>
-<li>Endpoint: POST: <code>/api/users/logout</code></li>
+<li>Endpoint: POST: <code>/api/v1/users/logout</code></li>
 </ul>
 <h3 id='response-7'>Response</h3>
 <ul>
@@ -676,7 +676,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">]</span>
 </code></pre><h3 id='request-8'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/users/:id/documents</code></li>
+<li>Endpoint: GET: <code>/api/v1/users/:id/documents</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='response-8'>Response</h3>
@@ -721,7 +721,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-9'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/search/users/</code></li>
+<li>Endpoint: GET: <code>/api/v1/search/users/</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='query-parameters-2'>Query Parameters</h3>
@@ -807,7 +807,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/documents</code></li>
+<li>Endpoint: GET: <code>/api/v1/documents</code></li>
 </ul>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
@@ -864,7 +864,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-2'>Request</h3>
 <ul>
-<li>Endpoint: POST: <code>/api/documents</code></li>
+<li>Endpoint: POST: <code>/api/v1/documents</code></li>
 <li>Requires: Authentication</li>
 <li>Body: <code>(application/json)</code></li>
 </ul>
@@ -895,7 +895,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-3'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/documents/:id</code></li>
+<li>Endpoint: GET: <code>/api/v1/documents/:id</code></li>
 </ul>
 <h3 id='response-3'>Response</h3>
 <ul>
@@ -931,7 +931,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-4'>Request</h3>
 <ul>
-<li>Endpoint: PUT: <code>/api/documents/:id</code></li>
+<li>Endpoint: PUT: <code>/api/v1/documents/:id</code></li>
 <li>Requires: Authentication</li>
 <li>Body: <code>(application/json)</code></li>
 </ul>
@@ -949,7 +949,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-5'>Request</h3>
 <ul>
-<li>Endpoint: DELETE: <code>/api/documents/:id</code></li>
+<li>Endpoint: DELETE: <code>/api/v1/documents/:id</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='response-5'>Response</h3>
@@ -1007,7 +1007,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-6'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/search/documents/</code></li>
+<li>Endpoint: GET: <code>/api/v1/search/documents/</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='query-parameters-2'>Query Parameters</h3>
@@ -1045,7 +1045,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">]</span>
 </code></pre><h3 id='request'>Request</h3>
 <ul>
-<li>Endpoint: GET: <code>/api/roles</code></li>
+<li>Endpoint: GET: <code>/api/v1/roles</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='response'>Response</h3>
@@ -1070,7 +1070,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-2'>Request</h3>
 <ul>
-<li>Endpoint: POST: <code>/api/roles</code></li>
+<li>Endpoint: POST: <code>/api/v1/roles</code></li>
 <li>Requires: Authentication</li>
 <li>Body: <code>(application/json)</code></li>
 </ul>
@@ -1088,7 +1088,7 @@ That is, only users in a particular role can view role-access documents, while o
 <span class="p">}</span>
 </code></pre><h3 id='request-3'>Request</h3>
 <ul>
-<li>Endpoint: DELETE: <code>/api/roles/:id</code></li>
+<li>Endpoint: DELETE: <code>/api/v1/roles/:id</code></li>
 <li>Requires: Authentication</li>
 </ul>
 <h3 id='response-3'>Response</h3>
